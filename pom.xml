@@ -20,6 +20,7 @@
         <log4j.version>2.13.0</log4j.version>
         <rest.assured.version>4.2.0</rest.assured.version>
         <json.version>20190722</json.version>
+        <mongo.version>3.12.1</mongo.version>
 
         <maven.project.info.reports.plugin>3.0.0</maven.project.info.reports.plugin>
         <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
@@ -125,6 +126,11 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>${json.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>${mongo.version}</version>
         </dependency>
     </dependencies>
 
