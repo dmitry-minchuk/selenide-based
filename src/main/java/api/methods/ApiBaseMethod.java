@@ -1,6 +1,7 @@
 package api.methods;
 
-import domain.PropertyNameSpace;
+import configuration.ProjectConfiguration;
+import configuration.domain.PropertyNameSpace;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -11,7 +12,6 @@ import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
-import utils.ProjectConfiguration;
 
 import java.io.FileInputStream;
 import java.io.IOException;
