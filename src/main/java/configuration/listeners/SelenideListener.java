@@ -19,9 +19,11 @@ public class SelenideListener implements LogEventListener {
         LOGGER.info(logStr);
         // Logging into Report Portal
         if(logEvent.getStatus().equals(LogEvent.EventStatus.FAIL)) {
+            LOGGER.info("Trying to send log string: " + logStr + " to Report Portal!");
             ReportPortal.emitLog(logStr, "INFO", new Date(), Screenshots.takeScreenShotAsFile());
         } else {
-            ReportPortal.emitLog(logStr, "INFO", new Date());
+            LOGGER.info("Trying to send log string: " + logStr + " to Report Portal!");
+            ReportPortal.emitLog(logStr, "INFO", new Date(), Screenshots.takeScreenShotAsFile());
         }
     }
 
