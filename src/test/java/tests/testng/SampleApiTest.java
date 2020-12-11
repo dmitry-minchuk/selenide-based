@@ -48,7 +48,7 @@ public class SampleApiTest extends BaseTest {
     }
 
     // Movie Database tests
-    @Test
+//    @Test
     public void testGetMovieByName() {
         String actorName = "Robert Downey Jr.";
 
